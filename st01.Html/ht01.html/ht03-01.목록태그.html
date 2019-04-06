@@ -15,30 +15,85 @@
 
     <h2>기호 목록 태그 : ul</h2>
     <!-- 기호 : disc -->
+    <ul>
+        <li>사과</li>
+        <li>바나나</li>
+        <li>오렌지</li>
+    </ul>
     <!-- 기호 : square -->
+    <ul style="list-style-type:square">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
     <!-- 기호 : circle -->
-
     <h2>번호 목록 태그 : ol</h2>
+        <ol style="circle">
+            <li>사과</li>
+            <li>바나나</li>
+            <li>오렌지</li>
+        </ol>
 
     <h2>정의 목록: dl</h2>
+        <dl>
+            <li>사과</li>
+            <li>바나나</li>
+            <li>오렌지</li>
+        </dl>
 
     <h2>번호 목록 태그 + 정의 목록의 결합</h2>
-
+         <ol style="list-style-type: lower-alha;">
+            <li>사과</li>
+            <li>바나나</li>
+            <li>오렌지</li>
+         </ol>
     
     <h2>정의 목록의 결합 + 번호 목록 태그</h2>
+        <ul>
+            <li>사과</li>
+            <li>바나나</li>
+            <li>오렌지</li>
+        </ul>
+    
+    <h2>정의목록 : dl</h2>
+    <dl>
+        <dt>과일목록</dt>
+        <dd>사과</dd>
+        <dd>바나나</dd>
+        <dd>오렌지 </dd>
+    </dl>
+
+
+
+
 
     <h2>기호 목록(ul) 태그  + 기호(ul) 목록 태그 결합</h2>
-    <!-- ul을 사용하여 아래 구조의 메뉴를 만들어 보자. page 73 참조
+    <!-- ul을 사용하여 아래 구조의 메뉴를 만들어 보자. page 73 참조 -->
 
-        회사소개 
-            인사말
-            오시는길
+        <li>
+        회사소개
+            <ul style="list-style-type:circle;">
+              <li>인사말</li>
+              <li>오시는길</li>
+            </ul>
+        </li>
+
+        <li>
         사업분야
-            디자인
-            개발
+            <ul style="list-style-type:circle;">
+              <li>디자인</li>
+              <li>개발</li>
+            </ul>
+        </li> 
+           
+        <li>
         BBS
-            공지사항
-            QnA
-    -->
+            <ul style="list-style-type:circle;">
+              <li>공지사항</li>
+              <li>QnA</li>
+            </ul>
+         </li>   
+
+
 </body>
 </html>
