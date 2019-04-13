@@ -4,18 +4,44 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        label {width:140px; display:inline-block;}
+        #ck label {width:200px; display:inline-block;}
+        #ck input {width:30px; display: inline-block;} 
+        div{text-align:center;}
+        fieldset{padding:20px; margin:10px;}
     </style>
 </head>
 <body>
-    <h1>��ǰ �ֹ���</h1>
+    <h1>상품 주문</h1>
+    
+    <form>
+    <fieldset>
+        <legend>개인정보</legend>
+        <label for="aaa">이름</label><input type="text" name="" value="이름을 입력하시오" id="aaa"> <br/>
+        <label for="bbb">연락처</label><input type="text" name="" value="연락처를 입력하시오" id="bbb">
+    </fieldset>
 
-        <!-- ���� ���� -->
+    <fieldset>
+        <legend>배송지 정보</legend>
+        <label for="ccc">주소</label><input type="text" name="" id="ccc"></br>
+        <label for="ddd">전화번호</label><input type="text" name="" id="ddd"></br>
+        <label for="eee" style="vertical-align:top">메모</label><textarea type="" name="" id="eee"> </textarea>
 
-        <!-- ����� ���� -->
 
-        <!-- �ֹ� ���� -->
+    </fieldset>
 
-        <!-- �ֹ��ϱ� -->
-        <!-- �ٽ��ۼ� : form �Է� �� �ʱ�ȭ  -->
+    <fieldset id="ck">
+        <legend>주문 정보</legend>
+        <input type="checkbox" checked=""><label>과테말라 안티구아 (100g)</label><input type="">개</br>
+        <input type="checkbox"><label>인도네시아 만텔링 (100g)</label><input type="">개</br>
+        <input type="checkbox"><label>탐라는도다(블렌딩) (100g)</label><input type="">개</br>
+    </fieldset>
+
+    <div>
+    <input type="submit" value="주문하기"><input type="submit" value="다시작성">
+    </div>
+
+    </form>
+
 </body>
 </html>

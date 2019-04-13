@@ -1,4 +1,4 @@
-1강
+1강===================================================================================
 
 
 <깃허브> 
@@ -22,13 +22,116 @@
 
 
 
+
+
+
+삭제 폴더안에 Settings - Repository name 복사 - 
+Delete this repository
+Once you delete a repository, there is no going back. Please be certain.  버튼 누르기
+- 복사해둔거 입력 - 삭제
+
+그러나 로컬피씨에는 남아있음 (연결만 끊긴것임) - 해당폴더를 직접 삭제해주어야한다.
+
+
+
+
 <튜토리얼>
-html 입력후 - 5가 붙은걸 선택하면 기본셋팅.
+html 입력후 - html5걸 선택하면 기본셋팅.
+
+브라우저에서 확인하는법 alt + b 
 
 
 
-2강
+
+공백 &nbsp;
+< &lt;
+> &gt;
+
+
+테이블 : <table></table> 안에 <theade></theade>  <tbody></tbody> : 필수는 아님
+ 그안에 <tr></tr>로 열을 만들어준다  
+ <tr>안에서 <th>제목?</th> <td>내용?</td> 으로 행을 나눠준다
+
+
+colspan="" : 가로 합치기(넓히기)
+rowspan="" : 세로 합치기(넓히기)
+
+
+
+2강===================================================================================
+
+
 div와 span 너비를 감싼다 (차이점 : div는 페이지 너비만큼, span 컨텐츠 너비만큼 사용한다)
 
 멀티미디어 ; 모든 브라우저는  mp3 mp4를 사용한다. (비디오 오디오 태그). img 태그와 유사
 시맨틱 태그. header(헤더), footer, nav(메뉴), section(페이지 내용), article(페이지 내용)
+
+a태그에는 웹에서 이미지 경로를 가져올수 있다. (구글 이미지 - 오른쪽 마우스- 이미지 주소 복사)
+
+
+https://www.base64-image.de/ : 이미지를 문자열로 바꿔주는 사이트.
+
+: 벡터 형태는 깨짐을 방지하기 위해서, 문자열로 이미지를 많이 사용한다.
+
+
+
+a태그에서 #은? 페이지 내에서 이동을 의미한다.  (#은 id 속성이다!!)
+웹 주소를 입력하면? 다른페이지로 이동한다.
+
+
+a태그에 href="#~~" 를 넣으면 같은 페이지 내에서 그 섹션으로 이동한다. (앵커기능)
+
+
+<get방식 form태그에 네이버 검색 가져오기>
+
+
+====get 방식=====   : 검색 정보가 노출된다
+
+<form action="https://search.naver.com/search.naver" method="GET">   : 물음표 앞에 주소 : 어디서 실행할것인지?
+        <input type="text" name="query" value="멕시코">   : &query=멕시코 : name에 들어가는 것은 사이트마다 다름.(ex: 네이버:query 다음 : q)
+        <input type="text" name="ie" value="utf8">    :어떤 방식인지
+        <input type="button" value="">   필수는 아님
+        <input type="submit" value="검색"> 실행하기 위한 버튼. 자바에서는 안쓰지만 html에서는 필수임
+</form>
+
+
+===post 방식=====   : 검색 정보가 숨겨진다
+
+네이버는 post 방식은 허용하고 있지 않다.
+
+
+
+
+feildset : 폼태그 전체 박스로 묶기
+legend : 폼태그 전체의 박스에 제목을 붙임 (입력양식)
+
+
+
+체크박스 다중선택과 단일선택: 
+
+input type="checkbox" label의 for과 id값은 공통으로 설정하면 하나로 묶여서 단일 선택을 하게된다.
+input type="radio" 다중선택
+
+
+
+<select> 
+	<optgroup>  : option을 그룹핑할때 사용함. label="공과대학" 이런식으로 제목을 입력할수 있다.
+	   <option></option>
+	</optgroup> 
+	<option></option>
+</select>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

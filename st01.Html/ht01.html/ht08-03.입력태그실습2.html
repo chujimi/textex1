@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style type="text/css">
+        label {  width: 130px; display: inline-block; }
     </style>
 </head>
 <body>
@@ -12,18 +13,57 @@
 
         <!-- 로그인 -->
         <fieldset>
+            <legend>로그인</legend>
+            <label for="aaa">아이디 :</label><input type="text" name="" id="aaa">
+            <br/>
+            <label for="bbb">패스워드 :</label><input type="text" name="" id="bbb">
         </fieldset>
 
         <!-- 회원가입 -->
         <fieldset>
+             <legend>회원가입</legend>
+             <label for="ccc">아이디 :</label><input type="text" name="" id="ccc"><br/>
+             <label for="ddd">패스워드 :</label><input type="text" name="" id="ddd"><br/>
+             <label for="eee">패스워드 확인 :</label><input type="text" name="" id="eee"><br/>
+             <label for="fff">이름 :</label><input type="text" name="" id="fff"><br/>
+             <label for="ggg">이메일 :</label><input type="text" name="" id="ggg"><br/>
+             <label for="hhh">전화번호 :</label><input type="text" name="" id="hhh"><br/>
+             <label for="hhh">생년월일 :</label><input type="text" name="" value="연도-월-일" id="hhh"><br/>
         </fieldset>
 
         <!-- 수강신청 -->
-        <fieldset>
+        <fieldset id="cc">       
+            <legend>수강신청</legend> <br/>  
+            <label for="bb">영어초급</label><input type="radio" name="bb" id=""><br/>
+            <label for="bb">영어중급</label><input type="radio" name="bb" id=""><br/>
+            <label for="bb">영어고급</label><input type="radio" name="bb" id=""><br/>
+            <br/>
+            <label>영어초급</label><input type="checkbox" name="" id=""><br/>
+            <label>영어중급</label><input type="checkbox" name="" id=""><br/>
+            <label>영어고급</label><input type="checkbox" name="" id=""><br/> <br/>
+
         </fieldset>
+
+        <fieldset>            
+            <legend>학과</legend> 
+            <select name="" id>
+                <optgroup label="공과대학">
+                <option value="">건축과</option>
+                <option value="">토목과</option>
+                </optgroup>
+
+
+                <option value="">건축과</option>
+                <option value="">건축과</option>
+                <option value="">건축과</option>
+                
+            </select>
+        </fieldset>
+
 
         <!-- selec박스 -->
         <fieldset>
+                <input type="submit" value="쿼리전송">
         </fieldset>
 
         <!-- 전송 버튼 : form 을 완료 -->
@@ -31,5 +71,9 @@
 
     </form>
 
+    <h1>상품 주문서</h1>
+    <fieldset>
+        <legend>수강신청</legend> <br/> 
+    </fieldset>
 </body>
 </html>
